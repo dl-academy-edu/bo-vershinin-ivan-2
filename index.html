@@ -6,7 +6,7 @@
 </head>
 <body>
     <header class="header">
-         <img src="images/Union.png" alt="DLK-logo" class="header-logo">
+        <img src="images/Union.png" alt="DLK-logo" class="header-logo">
         <nav class="header-navigation">
             <ul class="header-navigation-block">
                 <li class="header-navigation-item"><a href="#">Blog</a></li>
@@ -65,9 +65,9 @@
             <img src="images/product-image.jpg" alt="product-img" class="main-product-unit-img">
             <div class="main-product-unit-description">
                 <h2 class="main-product-unit-header">Delivery</h2>
-                <p class="main-product-unit-item">Delivery</p>
-                <p class="main-product-unit-item">Guarantee</p>
-                <p class="main-product-unit-item">Credit</p>
+                <a href="#" class="main-product-unit-item">Delivery</a>
+                <a href="#" class="main-product-unit-item">Guarantee</a>
+                <a href="#" class="main-product-unit-item">Credit</a>
                 <p class="main-product-unit-text">
                     Some days i feel like i've been working on dlk my entire life and there are other days that i am 
                     completely shocked that four years have flown by. It's simply magical.
@@ -110,29 +110,31 @@
             <div class="footer-main-block-navigation">
                 <span class="footer-main-block-navigation-headline">Navigation</span>
                     <span class="footer-main-block-navigation-list">
-                        <span class="footer-main-block-navigation-item">About Us</span>
-                        <span class="footer-main-block-navigation-item">Blog</span>
-                        <span class="footer-main-block-navigation-item">Design Services</span>
-                        <span class="footer-main-block-navigation-item">Featured On</span>
-                        <span class="footer-main-block-navigation-item">2018 Holiday Catalog</span>
-                        <span class="footer-main-block-navigation-item">Shop By Designer</span>
+                        <a href="#" class="footer-main-block-navigation-item">About Us</a>
+                        <a href="#" class="footer-main-block-navigation-item">Blog</a>
+                        <a href="#" class="footer-main-block-navigation-item">Design Services</a>
+                        <a href="#" class="footer-main-block-navigation-item">Featured On</a>
+                        <a href="#" class="footer-main-block-navigation-item">2018 Holiday Catalog</a>
+                        <a href="#" class="footer-main-block-navigation-item">Shop By Designer</a>
                     </span>
             </div>
             <div class="footer-main-block-customer-information">
                 <span class="footer-main-block-customer-information-headline">Customer Information</span>
                     <span class="footer-main-block-customer-information-list">
-                        <span class="footer-main-block-customer-information-item">Contact Us</span>
-                        <span class="footer-main-block-customer-information-item">Sale Exclusions</span>
-                        <span class="footer-main-block-customer-information-item">Shipping & Returns</span>
-                        <span class="footer-main-block-customer-information-item">Terms & Conditions</span>
-                        <span class="footer-main-block-customer-information-item">Privacy Policy</span>
-                        <span class="footer-main-block-customer-information-item">Search</span>
+                        <a href="#" class="footer-main-block-customer-information-item">Contact Us</a>
+                        <a href="#" class="footer-main-block-customer-information-item">Sale Exclusions</a>
+                        <a href="#" class="footer-main-block-customer-information-item">Shipping & Returns</a>
+                        <a href="#" class="footer-main-block-customer-information-item">Terms & Conditions</a>
+                        <a href="#" class="footer-main-block-customer-information-item">Privacy Policy</a>
+                        <a href="#" class="footer-main-block-customer-information-item">Search</a>
                     </span>
             </div>
             <div class="footer-main-block-connect">
                 <span class="footer-main-block-connect-headline">Connect</span>
                 <form action="#" class="footer-main-block-connect-form">
-                    <input type="email" placeholder="Email" class="footer-main-block-connect-input">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Email" class="footer-main-block-connect-input"
+                           id="email" name="Email">
                     <button class="footer-main-block-connect-button">Join</button>
                     <div class="footer-main-block-connect-links">
                         <a href="https://www.facebook.com/" class="footer-main-block-connect-links-item">
@@ -164,5 +166,35 @@
             <span class="footer-additional-block-developers">Web Design — Direct Line Development</span>
         </div>
     </footer>
+    <div class="modal">
+        <img src="images/XMLID%201429.png" alt="close" class="modal-close">
+        <form action="#" class="modal-form">
+            <span class="modal-field">
+                <label for="name-field" class="modal-field-label">Name</label>
+                <input type="text" id="name-field" name="Name" class="modal-field-input">
+            </span>
+            <span class="modal-field">
+                <label for="phone-field" class="modal-field-label">Phone</label>
+                <input type="tel" id="phone-field" name="Phone" class="modal-field-input">
+            </span>
+            <span class="modal-field">
+                <label for="email-field" class="modal-field-label">Email</label>
+                <input type="email" id="email-field" name="Email" class="modal-field-input">
+            </span>
+            <span class="modal-field">
+                <label for="message-area" class="modal-field-label">Message</label>
+                <textarea name="Message" id="message-area" cols="30" rows="10" class="modal-field-text-area"></textarea>
+            </span>
+            <span class="modal-field-check">
+                <label class="modal-field-check-label">
+                    <input type="checkbox" name="consent" class="modal-field-checkbox">
+                    By clicking on the button, you consent to the processing of your personal data
+                </label>
+            </span>
+            <button class="modal-submit-button">
+                Submit
+            </button>
+        </form>
+    </div>
 </body>
 </html>
