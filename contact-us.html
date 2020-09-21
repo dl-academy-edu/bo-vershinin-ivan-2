@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Project</title>
-    <link rel="stylesheet" href="styles/pages/catalog.css">
+    <link rel="stylesheet" href="styles/pages/contact-us.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
@@ -31,53 +31,54 @@
         </div>
     </header>
     <main class="main grid">
-        <h1 class="main-headline">Category Products</h1>
+        <h1 class="main-headline">Contact Us</h1>
         <span class="main-breadcrumbs">
-                <span class="main-breadcrumbs-item">Home</span>
-                <span class="main-breadcrumbs-pointer"></span>
-                <span class="main-breadcrumbs-item">Catalog</span>
-            </span>
-        <section class="main-category-gallery">
-            <a href="#" class="main-category-gallery-preview-item">
-                <h6 class="main-category-gallery-preview-item-text">APPAREL KIDS</h6>
-                <img src="images/APPAREL-KIDS.png" alt="APPAREL KIDS" class="main-category-gallery-preview-item-img">
-            </a>
-            <a href="#" class="main-category-gallery-preview-item">
-                <h6 class="main-category-gallery-preview-item-text">HOLIDAY SHOP</h6>
-                <img src="images/HOLIDAY-SHOP.png" alt="HOLIDAY SHOP" class="main-category-gallery-preview-item-img">
-            </a>
-            <a href="toys.html" class="main-category-gallery-preview-item">
-                <h6 class="main-category-gallery-preview-item-text">TOYS</h6>
-                <img src="images/TOYS.png" alt="TOYS" class="main-category-gallery-preview-item-img">
-            </a>
-            <a href="#" class="main-category-gallery-preview-item">
-                <h6 class="main-category-gallery-preview-item-text">ACCESSORIES</h6>
-                <img src="images/ACCESSORIES.png" alt="ACCESSORIES" class="main-category-gallery-preview-item-img">
-            </a>
-            <a href="#" class="main-category-gallery-preview-item">
-                <h6 class="main-category-gallery-preview-item-text">SALE</h6>
-                <img src="images/SALE.png" alt="SALE" class="main-category-gallery-preview-item-img">
-            </a>
-            <a href="#" class="main-category-gallery-preview-item">
-                <h6 class="main-category-gallery-preview-item-text">APPAREL ADULTS</h6>
-                <img src="images/APPAREL-ADULTS.png" alt="APPAREL  ADULTS" class="main-category-gallery-preview-item-img">
-            </a>
-        </section>
-        <section class="main-description">
-            <h2 class="main-description-headline">Product Description</h2>
-            <p class="main-description-text">
-                Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry.
-                You can even bathe her, just like a little sister.
-            </p>
-            <p class="main-description-text">
-                A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright.
-                Such a doll will be an excellent choice for a gift for a girl from 4 years old.
-            </p>
-            <p class="main-description-text">
-                The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
-                hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her
-                young mistress.
-            </p>
+            <span class="main-breadcrumbs-item">Home</span>
+            <span class="main-breadcrumbs-pointer"></span>
+            <span class="main-breadcrumbs-item">Contact Us</span>
+        </span>
+        <section class="main-contact-us-form">
+            <form action="#" class="user-form" method="post">
+                <span class="user-field">
+                    <label for="name-field" class="user-field-label">Name</label>
+                    <input type="text" id="name-field" name="Name" class="user-field-input">
+                </span>
+                <span class="user-field-group">
+                    <span class="user-field">
+                        <label for="phone-field" class="user-field-label">Phone</label>
+                        <input type="tel" id="phone-field" name="Phone" class="user-field-input-m">
+                    </span>
+                    <span class="user-field">
+                        <label for="email-field" class="user-field-label">Email</label>
+                        <input type="email" id="email-field" name="Email" class="user-field-input-m">
+                    </span>
+                </span>
+                <span class="user-field">
+                    <label for="message-area" class="user-field-label">Message</label>
+                    <textarea name="Message" id="message-area" cols="30" rows="10" class="user-field-text-area"></textarea>
+                </span>
+                <span class="user-field-check">
+                    <input id="consent" type="checkbox" name="consent" class="modal-field-checkbox">
+                    <label class="user-field-check-label" for="consent">
+                        By clicking on the button, you consent to the processing of your personal data
+                    </label>
+                </span>
+                <button class="user-submit-button">
+                    Submit
+                </button>
+            </form>
+            <div class="main-contact-us-description">
+                <p class="main-contact-us-description-text">
+                    Our support team are on-hand to assist with any issues you are experiencing.
+                </p>
+                <p class="main-contact-us-description-text">
+                    Please use the form to contact us with your needs. Send us a message and we'll respond as
+                    soon as possible.
+                </p>
+                <h2 class="main-contact-us-description-headline">
+                    An expert is waiting to help you!
+                </h2>
+            </div>
         </section>
     </main>
     <footer class="footer">

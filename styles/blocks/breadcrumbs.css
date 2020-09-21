@@ -1,0 +1,33 @@
+.main-breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    font-family: Crimson Text;
+}
+
+.main-breadcrumbs-item {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #1E0606;
+}
+
+.main-breadcrumbs-item:not(:nth-child(1)) {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+
+    text-transform: capitalize;
+
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+.main-breadcrumbs-pointer {
+    background: url("../../images/svg/BreadCrambsArrow.svg") no-repeat;
+    width: 8px;
+    height: 12px;
+    margin: auto 20px;
+}

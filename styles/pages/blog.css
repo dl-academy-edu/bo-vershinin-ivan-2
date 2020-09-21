@@ -1,0 +1,97 @@
+@import "../blocks/body.css";
+@import "../blocks/header.css";
+@import "../blocks/footer.css";
+@import "../blocks/main.css";
+@import "../blocks/grid.css";
+@import "../blocks/breadcrumbs.css";
+@import "../blocks/pagination.css";
+
+.main-headline {
+    margin: 0px 0px 15px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+
+    text-transform: uppercase;
+
+    color: #1E0606;
+}
+
+.main-blog {
+    margin-top: 50px;
+}
+
+.main-blog-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.main-blog-item {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 491px;
+    margin: 20px auto;
+}
+
+.main-blog-item-img {
+    width: 380px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.main-blog-item-date {
+    margin-bottom: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #818181;
+}
+
+.main-blog-item-headline {
+    margin-bottom: 15px;
+}
+
+.main-blog-item-headline-text {
+    margin: 0;
+
+    font-family: Montserrat;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #1E0606;
+}
+
+.main-blog-item-text {
+    margin: 0px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #1E0606;
+}
+
+.main-blog-item-headline:hover {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+
+    text-decoration-line: underline;
+}

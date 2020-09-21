@@ -1,0 +1,114 @@
+@import "../blocks/body.css";
+@import "../blocks/header.css";
+@import "../blocks/footer.css";
+@import "../blocks/main.css";
+@import "../blocks/breadcrumbs.css";
+@import "../blocks/grid.css";
+
+.main-headline {
+    margin: 0px 0px 15px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+
+    text-transform: uppercase;
+
+    color: #1E0606;
+}
+
+.main-category-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0px 50px 0px;
+    /*max-width: 1400px;*/
+}
+
+.main-category-gallery-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-category-gallery-preview-item {
+    text-decoration: none;
+    width: 280px;
+    height: 270px;
+    /*display: inline-flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    background: #DBE4DB;
+    position: relative;
+}
+.main-category-gallery-preview-item:not(:last-of-type) {
+    margin-right: 20px;
+}
+.main-category-gallery-preview-item:nth-child(1) {
+    margin-bottom: 23px;
+}
+.main-category-gallery-preview-item:nth-child(3) {
+    margin-right: 280px;
+}
+.main-category-gallery-preview-item:nth-child(4) {
+    margin-left: 200px;
+}
+
+
+.main-category-gallery-preview-item-img {
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    max-height: 270px;
+}
+
+.main-category-gallery-preview-item-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.main-description {
+    margin: 50px 410px 0 200px;
+    max-width: 680px;
+}
+.main-description-headline {
+    margin: 0 0 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* Black */
+
+    color: #1E0606;
+}
+.main-description-text {
+    margin-bottom: 15px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* Black */
+
+    color: #1E0606;
+}

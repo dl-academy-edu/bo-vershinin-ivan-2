@@ -1,33 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Project</title>
+    <link rel="stylesheet" href="styles/pages/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img src="images/Union.png" alt="DLK-logo" class="header-logo">
-        <nav class="header-navigation">
-            <ul class="header-navigation-block">
-                <li class="header-navigation-item"><a href="#">Blog</a></li>
-                <li class="header-navigation-item"><a href="catalog.html">Catalog</a></li>
-                <li class="header-navigation-item"><a href="#">About Us</a></li>
-            </ul>
-        </nav>
-        <img src="images/XMLID%201397.png" alt="search" class="header-link-img">
-        <a href="#" class="header-link">Contact Us</a>
+    <header class="grid">
+        <div class="header">
+            <div class="header-navigation">
+                <a class="header-logo-link" href="index.html">
+                    <img src="images/Union.png" alt="DLK-logo" class="header-logo">
+                </a>
+                <nav>
+                    <ul class="header-navigation-block">
+                        <li class="header-navigation-item"><a href="blog.html">Blog</a></li>
+                        <li class="header-navigation-item"><a href="catalog.html">Catalog</a></li>
+                        <li class="header-navigation-item"><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="contact-us.html" class="header-link">
+                <img src="images/XMLID%201397.png" alt="search" class="header-link-img">
+                Contact Us
+            </a>
+        </div>
     </header>
-    <main class="main">
+    <main class="main grid">
         <section class="main-preview-unit">
             <div class="preview-container">
-                <span class="preview-container-number">01</span>
-                <h1 class="preview-container-headline">THE OOH NOO  COLLECTION</h1>
-                <span class="preview-container-annotation">Designed in Slovenia</span>
-                <a href="#" class="preview-container-link">EXPLORE NOW</a>
-                <img src="images/prev-image.png" alt="prev-img" class="preview-container-img">
-                <div class="preview-container-supplement">
-                    <span class="preview-container-supplement-text">Free (continental) USA shipping on all orders of $100 USD or more!</span>
+                <div class="preview-container-paginator">
+                    <span class="preview-container-number">01</span>
+                    <a href="#" class="preview-container-slide"></a>
+                    <a href="#" class="preview-container-slide"></a>
+                    <a href="#" class="preview-container-slide"></a>
+                    <a href="#" class="preview-container-slide"></a>
                 </div>
+                <div class="preview-container-description">
+                    <h1 class="preview-container-headline">THE OOH NOO COLLECTION</h1>
+                    <span class="preview-container-annotation">Designed in Slovenia</span>
+                    <a href="#" class="preview-container-link" id="explore-now">EXPLORE NOW</a>
+                    <img src="images/prev-image.png" alt="prev-img" class="preview-container-img">
+                </div>
+            </div>
+            <div class="preview-container-supplement">
+                <span class="preview-container-supplement-text">Free (continental) USA shipping on all orders of $100 USD or more!</span>
             </div>
         </section>
         <section class="main-category-unit">
@@ -35,25 +56,29 @@
             <div class="main-category-gallery">
                 <div class="main-category-gallery-preview">
                     <a href="#" class="main-category-gallery-preview-item">
-                        <span class="main-category-gallery-preview-item-text">APPAREL KIDS</span>
                         <img src="images/APPAREL-KIDS.png" alt="APPAREL KIDS" class="main-category-gallery-preview-item-img">
+                        <span class="main-category-gallery-preview-item-text">APPAREL KIDS</span>
                     </a>
                     <a href="#" class="main-category-gallery-preview-item">
-                        <span class="main-category-gallery-preview-item-text">HOLIDAY SHOP</span>
                         <img src="images/HOLIDAY-SHOP.png" alt="HOLIDAY SHOP" class="main-category-gallery-preview-item-img">
+                        <span class="main-category-gallery-preview-item-text">HOLIDAY SHOP</span>
                     </a>
                     <a href="#" class="main-category-gallery-preview-item">
-                        <span class="main-category-gallery-preview-item-text">TOYS</span>
                         <img src="images/TOYS.png" alt="TOYS" class="main-category-gallery-preview-item-img">
+                        <span class="main-category-gallery-preview-item-text">TOYS</span>
                     </a>
                     <a href="#" class="main-category-gallery-preview-item">
-                        <span class="main-category-gallery-preview-item-text">ACCESSORIES</span>
                         <img src="images/ACCESSORIES.png" alt="ACCESSORIES" class="main-category-gallery-preview-item-img">
+                        <span class="main-category-gallery-preview-item-text">ACCESSORIES</span>
                     </a>
                 </div>
                 <div class="main-category-gallery-pagination">
-                    <a href="#" class="main-category-gallery-pagination-button-left"><</a>
-                    <a href="#" class="main-category-gallery-pagination-button-right">></a>
+                    <a href="#" class="main-category-gallery-pagination-button-left">
+                        <span class="button-left"></span>
+                    </a>
+                    <a href="#" class="main-category-gallery-pagination-button-right">
+                        <span class="button-right"></span>
+                    </a>
                     <span class="main-category-gallery-pagination-text">
                         Modern finds for the modern home. Curated goods by unique designers around the world from
                         fashion to furniture for kids and adults.
@@ -79,13 +104,13 @@
                 <a href="#" class="main-product-unit-link">LEARN MORE</a>
             </div>
         </section>
-        <section class="main-sponsors-unit">
+        <div class="main-sponsors-unit">
             <img src="images/mail-ru.png" alt="mail-ru" class="main-sponsors-logo">
             <img src="images/apple.png" alt="apple" class="main-sponsors-logo">
             <img src="images/eltex.png" alt="eltex" class="main-sponsors-logo">
             <img src="images/owox.png" alt="owox" class="main-sponsors-logo">
-        </section>
-        <section class="main-addition-unit">
+        </div>
+        <div class="main-addition-unit">
             <article class="main-addition-about-us">
                 <h2 class="main-addition-about-us-headline">Design Life Kids</h2>
                 <h3 class="main-addition-about-us-interlineation">About Us</h3>
@@ -103,98 +128,113 @@
                 </p>
                 <img src="images/map-img.jpg" alt="map-img" class="main-addition-contacts-map">
             </article>
-        </section>
+        </div>
     </main>
     <footer class="footer">
-        <div class="footer-main-block">
-            <div class="footer-main-block-navigation">
-                <span class="footer-main-block-navigation-headline">Navigation</span>
+        <div class="grid">
+            <div class="footer-main-block">
+                <div class="footer-main-block-navigation">
+                    <span class="footer-main-block-navigation-headline">Navigation</span>
                     <span class="footer-main-block-navigation-list">
-                        <a href="#" class="footer-main-block-navigation-item">About Us</a>
-                        <a href="#" class="footer-main-block-navigation-item">Blog</a>
-                        <a href="#" class="footer-main-block-navigation-item">Design Services</a>
-                        <a href="#" class="footer-main-block-navigation-item">Featured On</a>
-                        <a href="#" class="footer-main-block-navigation-item">2018 Holiday Catalog</a>
-                        <a href="#" class="footer-main-block-navigation-item">Shop By Designer</a>
-                    </span>
-            </div>
-            <div class="footer-main-block-customer-information">
-                <span class="footer-main-block-customer-information-headline">Customer Information</span>
+                            <a href="#" class="footer-main-block-navigation-item">About Us</a>
+                            <a href="#" class="footer-main-block-navigation-item">Blog</a>
+                            <a href="#" class="footer-main-block-navigation-item">Design Services</a>
+                            <a href="#" class="footer-main-block-navigation-item">Featured On</a>
+                            <a href="#" class="footer-main-block-navigation-item">2018 Holiday Catalog</a>
+                            <a href="#" class="footer-main-block-navigation-item">Shop By Designer</a>
+                        </span>
+                </div>
+                <div class="footer-main-block-customer-information">
+                    <span class="footer-main-block-customer-information-headline">Customer Information</span>
                     <span class="footer-main-block-customer-information-list">
-                        <a href="#" class="footer-main-block-customer-information-item">Contact Us</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Sale Exclusions</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Shipping & Returns</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Terms & Conditions</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Privacy Policy</a>
-                        <a href="#" class="footer-main-block-customer-information-item">Search</a>
-                    </span>
-            </div>
-            <div class="footer-main-block-connect">
-                <span class="footer-main-block-connect-headline">Connect</span>
-                <form action="#" class="footer-main-block-connect-form">
-                    <label for="email"></label>
-                    <input type="email" placeholder="Email" class="footer-main-block-connect-input"
-                           id="email" name="Email">
-                    <button class="footer-main-block-connect-button">Join</button>
+                            <a href="#" class="footer-main-block-customer-information-item">Contact Us</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Sale Exclusions</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Shipping & Returns</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Terms & Conditions</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Privacy Policy</a>
+                            <a href="#" class="footer-main-block-customer-information-item">Search</a>
+                        </span>
+                </div>
+                <div class="footer-main-block-connect">
+                    <span class="footer-main-block-connect-headline">Connect</span>
+                    <form action="#" class="footer-main-block-connect-form">
+                        <label for="email"></label>
+                        <input type="email" placeholder="Email" class="footer-main-block-connect-input"
+                               id="email" name="Email">
+                        <button class="footer-main-block-connect-button">Join</button>
+                    </form>
                     <div class="footer-main-block-connect-links">
                         <a href="https://www.facebook.com/" class="footer-main-block-connect-links-item">
-                            <img src="#" alt="facebook" class="footer-main-block-connect-links-img">
+                            <img src="images/svg/Facebook.svg" alt="facebook" class="footer-main-block-connect-links-img">
                         </a>
                         <a href="https://twitter.com/explore" class="footer-main-block-connect-links-item">
-                            <img src="#" alt="twitter" class="footer-main-block-connect-links-img">
+                            <img src="images/svg/Twitter.svg" alt="twitter" class="footer-main-block-connect-links-img">
                         </a>
                         <a href="https://pinterest.com" class="footer-main-block-connect-links-item">
-                            <img src="#" alt="pinterest" class="footer-main-block-connect-links-img">
+                            <img src="images/svg/Pinterest.svg" alt="pinterest" class="footer-main-block-connect-links-img">
                         </a>
                         <a href="https://www.instagram.com/" class="footer-main-block-connect-links-item">
-                            <img src="#" alt="instagram" class="footer-main-block-connect-links-img">
+                            <img src="images/svg/Instagram.svg" alt="instagram" class="footer-main-block-connect-links-img">
                         </a>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-        <div class="footer-additional-block">
-            <div class="footer-additional-block-rating">
-                <span class="footer-additional-block-rating-headline">Company Rating</span>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
-                <a href="#" class="footer-additional-block-rating-item">*</a>
+            <div class="footer-additional-block">
+                <div class="footer-additional-block-rating">
+                    <span class="footer-additional-block-rating-headline">Company Rating</span>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                    <a href="#" class="footer-additional-block-rating-item">
+                        <img src="images/svg/Star.svg" alt="star">
+                    </a>
+                </div>
+                <span class="footer-additional-block-copyright">Copyright © 2018 Dlk • Design Life Kids</span>
+                <span class="footer-additional-block-developers">Web Design — Direct Line Development</span>
             </div>
-            <span class="footer-additional-block-copyright">Copyright © 2018 Dlk • Design Life Kids</span>
-            <span class="footer-additional-block-developers">Web Design — Direct Line Development</span>
         </div>
     </footer>
-    <div class="modal">
-        <img src="images/XMLID%201429.png" alt="close" class="modal-close">
-        <form action="#" class="modal-form">
-            <span class="modal-field">
-                <label for="name-field" class="modal-field-label">Name</label>
-                <input type="text" id="name-field" name="Name" class="modal-field-input">
-            </span>
-            <span class="modal-field">
-                <label for="phone-field" class="modal-field-label">Phone</label>
-                <input type="tel" id="phone-field" name="Phone" class="modal-field-input">
-            </span>
-            <span class="modal-field">
-                <label for="email-field" class="modal-field-label">Email</label>
-                <input type="email" id="email-field" name="Email" class="modal-field-input">
-            </span>
-            <span class="modal-field">
-                <label for="message-area" class="modal-field-label">Message</label>
-                <textarea name="Message" id="message-area" cols="30" rows="10" class="modal-field-text-area"></textarea>
-            </span>
-            <span class="modal-field-check">
-                <label class="modal-field-check-label">
-                    <input type="checkbox" name="consent" class="modal-field-checkbox">
-                    By clicking on the button, you consent to the processing of your personal data
-                </label>
-            </span>
-            <button class="modal-submit-button">
-                Submit
-            </button>
-        </form>
+    <div class="modal" id="modal-block">
+        <div class="modal-container">
+            <form action="#" class="user-form" method="post">
+                <span class="user-field">
+                    <label for="name-field" class="user-field-label">Name</label>
+                    <input type="text" id="name-field" name="Name" class="user-field-input">
+                </span>
+                <span class="user-field">
+                    <label for="phone-field" class="user-field-label">Phone</label>
+                    <input type="tel" id="phone-field" name="Phone" class="user-field-input">
+                </span>
+                <span class="user-field">
+                    <label for="email-field" class="user-field-label">Email</label>
+                    <input type="email" id="email-field" name="Email" class="user-field-input">
+                </span>
+                <span class="user-field">
+                    <label for="message-area" class="user-field-label">Message</label>
+                    <textarea name="Message" id="message-area" cols="30" rows="10" class="user-field-text-area"></textarea>
+                </span>
+                <span class="user-field-check">
+                    <label class="user-field-check-label">
+                        <input type="checkbox" name="consent" class="modal-field-checkbox">
+                        By clicking on the button, you consent to the processing of your personal data
+                    </label>
+                </span>
+                <button class="user-submit-button">
+                    Submit
+                </button>
+            </form>
+            <img src="images/XMLID%201429.png" alt="close" class="modal-close">
+        </div>
     </div>
+    <script src="scripts/modal.js"></script>
 </body>
 </html>

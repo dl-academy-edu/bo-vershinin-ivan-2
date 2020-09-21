@@ -1,0 +1,56 @@
+@import "../blocks/body.css";
+@import "../blocks/header.css";
+@import "../blocks/footer.css";
+@import "../blocks/main.css";
+@import "../blocks/grid.css";
+@import "../blocks/breadcrumbs.css";
+@import "../blocks/user-form.css";
+
+
+.main-headline {
+    margin: 0px 0px 15px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+
+    text-transform: uppercase;
+
+    color: #1E0606;
+}
+
+.main-contact-us-form {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-contact-us-description {
+    width: 380px;
+}
+
+.main-contact-us-description-text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #1E0606;
+}
+
+.main-contact-us-description-headline {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 34px;
+
+    text-transform: uppercase;
+
+    color: #C29974;
+}
